@@ -10,6 +10,9 @@ mods/*
 !mods/rhino*.jar
 !mods/framework*.jar
 
+!mods/i18*.jar
+!mods/vaultpatcher*.jar
+
 !kubejs/
 kubejs/*
 !kubejs/server_scripts/

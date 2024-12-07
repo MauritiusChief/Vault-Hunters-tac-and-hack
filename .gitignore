@@ -1,0 +1,16 @@
+/*
+
+!.gitignore
+
+!mods/
+mods/*
+!mods/tac*.jar
+!mods/parcool*.jar
+!mods/kubejs*.jar
+!mods/rhino*.jar
+!mods/framework*.jar
+
+!kubejs/
+kubejs/*
+!kubejs/server_scripts/
+!kubejs/startup_scripts/

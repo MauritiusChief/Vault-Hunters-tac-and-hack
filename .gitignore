@@ -2,6 +2,23 @@
 
 !.gitignore
 
+!config/
+config/*
+!config/openloader/
+config/openloader/*
+!config/openloader/resources/
+!config/the_vault/
+!config/vaultpatcher_asm/
+
+!packmenu/
+
+!patchouli_books/
+
+!scripts/
+scripts/*
+!scripts/createbugfix.zs
+!scripts/jeiInformation.zs
+
 !mods/
 mods/*
 !mods/tac*.jar
@@ -9,6 +26,8 @@ mods/*
 !mods/kubejs*.jar
 !mods/rhino*.jar
 !mods/framework*.jar
+!mods/ftb-ulti*.jar
+!mods/ftb-lib*.jar
 
 !mods/i18*.jar
 !mods/vaultpatcher*.jar

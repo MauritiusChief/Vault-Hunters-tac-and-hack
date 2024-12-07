@@ -1,0 +1,8 @@
+{
+  "translations": {
+    "the_vault.gear_attribute.effect_avoidance.avoidance": "%s\u62b5\u6297",
+    "the_vault.gear_attribute.effect_avoidance.avoidance.bad_effects": "\u6548\u679c",
+    "the_vault.offering_effect.light_melee": "\u8fd1\u6218\u653b\u51fb",
+    "the_vault.offering_effect.heavy_melee": "\u91cd\u8fd1\u6218\u653b\u51fb"
+  }
+}

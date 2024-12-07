@@ -1,0 +1,119 @@
+{
+  "defaultCraftedPool": "\u7834\u70c2",
+  "proficiencyPools": [
+    {
+      "minProficiency": 0.0,
+      "proficiencyName": "\u65b0\u624b",
+      "durabilityOutcomeName": "\u975e\u5e38\u4f4e",
+      "pool": "\u7834\u70c2+",
+      "color": 14745587,
+      "craftingPotentialMultiplier": 0.0,
+      "greaterModifierChance": 0.0,
+      "maximumRepairSlots": 1,
+      "soulboundChance": 0.0,
+      "soulboundModifierId": "the_vault:base_soulbound",
+      "gearRollOutcomeModifiers": [
+        {
+          "gearModifierId": "the_vault:base_durability",
+          "outcomeBias": "WORST",
+          "rollAttempts": 40
+        }
+      ]
+    },
+    {
+      "minProficiency": 0.2,
+      "proficiencyName": "\u5b66\u5f92",
+      "durabilityOutcomeName": "\u4f4e",
+      "pool": "\u666e\u901a+",
+      "color": 11794910,
+      "craftingPotentialMultiplier": 0.2,
+      "greaterModifierChance": 0.02,
+      "maximumRepairSlots": 2,
+      "soulboundChance": 0.1,
+      "soulboundModifierId": "the_vault:base_soulbound",
+      "gearRollOutcomeModifiers": [
+        {
+          "gearModifierId": "the_vault:base_durability",
+          "outcomeBias": "WORST",
+          "rollAttempts": 20
+        }
+      ]
+    },
+    {
+      "minProficiency": 0.4,
+      "proficiencyName": "\u80fd\u624b",
+      "durabilityOutcomeName": "\u4e2d",
+      "pool": "\u666e\u901a+",
+      "color": 8844233,
+      "craftingPotentialMultiplier": 0.4,
+      "greaterModifierChance": 0.04,
+      "maximumRepairSlots": 3,
+      "soulboundChance": 0.2,
+      "soulboundModifierId": "the_vault:base_soulbound",
+      "gearRollOutcomeModifiers": [
+        {
+          "gearModifierId": "the_vault:base_durability",
+          "outcomeBias": "BEST",
+          "rollAttempts": 5
+        }
+      ]
+    },
+    {
+      "minProficiency": 0.6,
+      "proficiencyName": "\u4e13\u5bb6",
+      "durabilityOutcomeName": "\u9ad8",
+      "pool": "\u666e\u901a+",
+      "color": 5959092,
+      "craftingPotentialMultiplier": 0.6,
+      "greaterModifierChance": 0.06,
+      "maximumRepairSlots": 4,
+      "soulboundChance": 0.3,
+      "soulboundModifierId": "the_vault:base_soulbound",
+      "gearRollOutcomeModifiers": [
+        {
+          "gearModifierId": "the_vault:base_durability",
+          "outcomeBias": "BEST",
+          "rollAttempts": 10
+        }
+      ]
+    },
+    {
+      "minProficiency": 0.8,
+      "proficiencyName": "\u5927\u5e08",
+      "durabilityOutcomeName": "\u975e\u5e38\u9ad8",
+      "pool": "\u7a00\u6709+",
+      "color": 3008415,
+      "craftingPotentialMultiplier": 0.8,
+      "greaterModifierChance": 0.08,
+      "maximumRepairSlots": 5,
+      "soulboundChance": 0.4,
+      "soulboundModifierId": "the_vault:base_soulbound",
+      "gearRollOutcomeModifiers": [
+        {
+          "gearModifierId": "the_vault:base_durability",
+          "outcomeBias": "BEST",
+          "rollAttempts": 20
+        }
+      ]
+    },
+    {
+      "minProficiency": 1.0,
+      "proficiencyName": "\u5b97\u5e08",
+      "durabilityOutcomeName": "\u4f18\u79c0",
+      "pool": "\u7a00\u6709+",
+      "color": 57738,
+      "craftingPotentialMultiplier": 1.0,
+      "greaterModifierChance": 0.1,
+      "maximumRepairSlots": 6,
+      "soulboundChance": 0.5,
+      "soulboundModifierId": "the_vault:base_soulbound",
+      "gearRollOutcomeModifiers": [
+        {
+          "gearModifierId": "the_vault:base_durability",
+          "outcomeBias": "BEST",
+          "rollAttempts": 100
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "sortnum": 3,
+  "name": "诅咒",
+  "icon": "the_vault:scavenger_skeleton_skull",
+  "category": "patchouli:modifiers_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "诅咒会以对玩家$(l)严重不利$()的方式影响宝库。$(br2)诅咒只能在宝库水晶已经被$(l)宝库催化剂$()、$(l)铭文$()等进行$(l:game_mechanics/crystal_modification)$(l)修饰$()以后才能生效。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "诅咒",
+      "text": "$(br)宝库水晶上$(l)骷髅头$()的数量代表该水晶上出现的诅咒词缀的$(l)数量$()。$(br2)宝库诅咒$(l)无法$()查看和移除。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可能出现的诅咒",
+      "text": "$(li)$(l)宝库不生成矿石/战利品$()$(br)$(li)$(l)部分怪物攻击时附带法术$()$(br)$(li)$(l)部分怪物无形，免疫伤害$()$(br)$(li)$(l)部分怪物攻击时冻结玩家$()$(br)$(li)$(l)产生随机爆炸$()$(br)$(li)$(l)产生坍塌$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "可能出现的诅咒",
+      "text": "$(li)$(l)随机生成虚空流体池$()$(br)$(li)$(l)减少探索时间$()"
+    }
+  ]
+}

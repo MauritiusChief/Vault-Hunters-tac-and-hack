@@ -1,0 +1,93 @@
+[
+    {
+        "name": "宝藏猎人主要硬编码汉化-动态替换部分2",
+        "desc": "硬编码半匹配部分。版本V2.6.4",
+        "authors": "KlparetlR、VM汉化组、ByF、DrIceTea",
+        "mods": "the_vault",
+        "dynamic": true
+    },
+    {
+        "target_class": {
+            "name": "iskallia.vault.item.ItemLegendaryTreasure",
+            "method": "m_7373_"
+        },
+        "pairs": [
+            {
+                "key": "COMMON",
+                "value": "@普通"
+            },
+            {
+                "key": "RARE",
+                "value": "@稀有"
+            },
+            {
+                "key": "EPIC",
+                "value": "@史诗"
+            },
+            {
+                "key": "OMEGA",
+                "value": "@终焉"
+            }
+        ]
+    },
+    {
+        "_comment": "ordinal bug set 1: local = Vtype, ordinal = 73"
+    },
+    {
+        "target_class": {
+            "name": "iskallia.vault.command.PointsResetCommand",
+            "method": "resetPoints",
+            "local": "Vtype",
+            "ordinal": 73
+        },
+        "pairs": [
+            {
+                "key": "@skill",
+                "value": "技能"
+            },
+            {
+                "key": "@knowledge",
+                "value": "知识"
+            }
+        ]
+    },
+    {
+        "_comment": "ordinal bug set 2: local = Mget, ordinal = 251"
+    },
+    {
+        "target_class": {
+            "name": "iskallia.vault.core.card.Card",
+            "method": "addText"
+        },
+        "pairs": [
+            {
+                "key": "Foil",
+                "value": "陪衬"
+            },
+            {
+                "key": "Offensive",
+                "value": "进攻"
+            },
+            {
+                "key": "Defensive",
+                "value": "防御"
+            },
+            {
+                "key": "Utility",
+                "value": "实用"
+            },
+            {
+                "key": "Magical",
+                "value": "魔法"
+            },
+            {
+                "key": "Essence",
+                "value": "精华"
+            },
+            {
+                "key": "Scaling",
+                "value": "强化"
+            }
+        ]
+    }
+]

@@ -68,6 +68,7 @@ onEvent('recipes', event => {
         B: 'the_vault:vault_nugget'
     });
 
+    event.shapeless('the_vault:vault_dust', ['minecraft:glass_bottle', 'supplementaries:ash'])
     event.smelting('the_vault:vault_essence', 'the_vault:vault_dust')
     // event.smoking('the_vault:knowledge_star_essence', 'minecraft:book')
     event.recipes.createSandpaperPolishing(['the_vault:knowledge_star_essence'], 'minecraft:book')

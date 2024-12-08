@@ -71,7 +71,9 @@ onEvent('recipes', event => {
     event.shapeless('the_vault:vault_dust', ['minecraft:glass_bottle', 'supplementaries:ash'])
     event.smelting('the_vault:vault_essence', 'the_vault:vault_dust')
     // event.smoking('the_vault:knowledge_star_essence', 'minecraft:book')
-    event.recipes.createSandpaperPolishing(['the_vault:knowledge_star_essence'], 'minecraft:book')
+    event.blasting('the_vault:knowledge_star_essence', 'minecraft:book')
+    event.blasting('the_vault:knowledge_star_core', 'supplementaries:blackboard')
+
     event.recipes.createSandpaperPolishing(['the_vault:vault_stone'], 'the_vault:vault_cobblestone')
     event.shapeless('the_vault:vault_diamond', ['minecraft:diamond', 'the_vault:vault_essence'])
     event.shapeless('the_vault:magic_silk', ['minecraft:paper', 'the_vault:vault_dust'])

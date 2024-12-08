@@ -36,3 +36,4 @@ mods/*
 kubejs/*
 !kubejs/server_scripts/
 !kubejs/startup_scripts/
+!kubejs/data/

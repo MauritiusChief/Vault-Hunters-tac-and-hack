@@ -25,7 +25,7 @@ onEvent('recipes', event => {
         { output: 'the_vault:gem_alexandrite', clay_count: 2, dye: 'minecraft:magenta_dye'},
         { output: 'the_vault:gem_wutodie', clay_count: 2, dye: 'minecraft:purple_dye'},
         { output: 'the_vault:gem_painite', clay_count: 3, dye: 'minecraft:red_dye'},
-        { output: 'the_vault:gem_black_opal', clay_count: 4, dye: 'minecraft:black_dye'}
+        { output: 'the_vault:gem_black_opal', clay_count: 3, dye: 'minecraft:black_dye'}
     ]
     x4_gems.forEach(gem => {
         // 使用 Array.fill() 动态生成 clay_count 数量的 'minecraft:clay_ball'

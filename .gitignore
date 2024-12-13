@@ -28,6 +28,7 @@ mods/*
 !mods/framework*.jar
 !mods/ftb-ulti*.jar
 !mods/ftb-lib*.jar
+!mods/*delight*.jar
 
 !mods/i18*.jar
 !mods/vaultpatcher*.jar

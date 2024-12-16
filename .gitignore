@@ -21,6 +21,7 @@ scripts/*
 
 !mods/
 mods/*
+!mods/createsift*.jar
 !mods/tac*.jar
 !mods/parcool*.jar
 !mods/kubejs*.jar

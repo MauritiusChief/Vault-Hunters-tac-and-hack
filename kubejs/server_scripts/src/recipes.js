@@ -51,13 +51,13 @@ onEvent('recipes', event => {
         event.shapeless(gem.output, ['minecraft:flint', 'minecraft:flint', `minecraft:${gem.dye1}`, `minecraft:${gem.dye2}`])
     });
 
-    event.shaped('the_vault:chromatic_iron_ingot', [
+    event.shaped('the_vault:chromatic_iron_block', [
         'SSS',
         'SBS',
         'SSS'
     ], {
-        S: 'minecraft:iron_nugget',
-        B: 'the_vault:chromatic_iron_nugget'
+        B: 'minecraft:iron_ingot',
+        S: 'the_vault:chromatic_iron_nugget'
     });
     event.shaped('the_vault:vault_ingot', [
         'SSS',
@@ -70,9 +70,20 @@ onEvent('recipes', event => {
 
     event.shapeless('the_vault:vault_dust', ['minecraft:glass_bottle', 'supplementaries:ash'])
     event.smelting('the_vault:vault_essence', 'the_vault:vault_dust')
-    // event.smoking('the_vault:knowledge_star_essence', 'minecraft:book')
-    event.blasting('the_vault:knowledge_star_essence', 'minecraft:book')
-    event.blasting('the_vault:knowledge_star_core', 'supplementaries:blackboard')
+
+    // 知识之星buster配方
+    event.blasting('the_vault:knowledge_star_essence', 'minecraft:paper')
+    event.shaped('the_vault:knowledge_star_core', [
+        'SSS',
+        'SBS',
+        'SSS'
+    ], {
+        S: 'minecraft:book',
+        B: 'supplementaries:blackboard'
+    });
+    // 热力膨胀 知识之星buster配方
+    event.recipes.thermal.crystallizer('the_vault:knowledge_star_shard',['the_vault:knowledge_star_essence',{"tag":"forge:experience","amount":250}])
+    event.recipes.thermal.crystallizer('the_vault:knowledge_star_core',['supplementaries:blackboard',{"tag":"forge:experience","amount":1000}])
 
     event.recipes.createSandpaperPolishing(['the_vault:vault_stone'], 'the_vault:vault_cobblestone')
     event.shapeless('the_vault:vault_diamond', ['minecraft:diamond', 'the_vault:vault_essence'])

@@ -82,8 +82,8 @@ onEvent('recipes', event => {
         B: 'supplementaries:blackboard'
     });
     // 热力膨胀 知识之星buster配方
-    event.recipes.thermal.crystallizer('the_vault:knowledge_star_shard',['the_vault:knowledge_star_essence',{"tag":"forge:experience","amount":250}])
-    event.recipes.thermal.crystallizer('the_vault:knowledge_star_core',['supplementaries:blackboard',{"tag":"forge:experience","amount":1000}])
+    // event.recipes.thermal.crystallizer('the_vault:knowledge_star_shard',['the_vault:knowledge_star_essence',Fluid.of('minecraft:water',250)])
+    // event.recipes.thermal.crystallizer('the_vault:knowledge_star_core',['supplementaries:blackboard',Fluid.of('minecraft:water',1000)])
 
     event.recipes.createSandpaperPolishing(['the_vault:vault_stone'], 'the_vault:vault_cobblestone')
     event.shapeless('the_vault:vault_diamond', ['minecraft:diamond', 'the_vault:vault_essence'])

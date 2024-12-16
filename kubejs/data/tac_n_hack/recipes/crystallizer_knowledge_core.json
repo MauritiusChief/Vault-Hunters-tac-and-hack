@@ -1,0 +1,17 @@
+{
+  "type": "thermal:crystallizer",
+  "ingredients": [
+    {
+      "fluid_tag": "forge:experience",
+      "amount": 1000
+    },
+    {
+      "item": "supplementaries:blackboard"
+    }
+  ],
+  "result": [
+    {
+      "item": "the_vault:knowledge_star_core"
+    }
+  ]
+}

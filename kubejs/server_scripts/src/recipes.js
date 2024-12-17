@@ -56,7 +56,7 @@ onEvent('recipes', event => {
         'SBS',
         'SSS'
     ], {
-        B: 'minecraft:iron_ingot',
+        B: 'minecraft:iron_nugget',
         S: 'the_vault:chromatic_iron_nugget'
     });
     event.shaped('the_vault:vault_ingot', [
@@ -96,4 +96,21 @@ onEvent('recipes', event => {
     ])
     event.recipes.createCutting(['2x the_vault:burger_patty'], 'minecraft:cooked_beef')
     event.recipes.createCutting(['2x the_vault:burger_bun'], 'minecraft:bread')
+    event.recipes.createCutting(['2x the_vault:burger_lettuce'], 'farmersdelight:cabbage')
+    event.recipes.createCutting(['2x the_vault:burger_tomato'], 'farmersdelight:tomato')
+    event.recipes.createCutting(['2x the_vault:burger_pickles'], 'farmersdelight:onion')
+
+    event.shapeless('the_vault:burger_cheese', ['farmersdelight:milk_bottle']).replaceIngredient('farmersdelight:milk_bottle', 'minecraft:glass_bottle')
+    event.shapeless('the_vault:burger_sauce', ['farmersdelight:tomato_sauce', 'minecraft:honey_bottle']).replaceIngredient('farmersdelight:tomato_sauce', 'minecraft:bowl')
+
+    // 热力膨胀
+    event.recipes.thermal.smelter('the_vault:chromatic_steel_ingot', ['the_vault:chromatic_iron_ingot', 'the_vault:carbon'])
+
+    event.recipes.thermal.sawmill('2x the_vault:burger_patty', 'minecraft:cooked_beef')
+    event.recipes.thermal.sawmill('2x the_vault:burger_bun', 'minecraft:bread')
+    event.recipes.thermal.sawmill('2x the_vault:burger_lettuce', 'farmersdelight:cabbage')
+    event.recipes.thermal.sawmill('2x the_vault:burger_tomato', 'farmersdelight:tomato')
+    event.recipes.thermal.sawmill('2x the_vault:burger_pickles', 'farmersdelight:onion')
+
+    event.recipes.thermal.refinery(['the_vault:burger_cheese'],Fluid.of('minecraft:milk',100))
 })

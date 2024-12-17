@@ -70,6 +70,7 @@ onEvent('recipes', event => {
 
     event.shapeless('the_vault:vault_dust', ['minecraft:glass_bottle', 'supplementaries:ash'])
     event.smelting('the_vault:vault_essence', 'the_vault:vault_dust')
+    event.blasting('create:brass_ingot', 'architects_palette:nether_brass_ingot')
 
     // 知识之星buster配方
     event.blasting('the_vault:knowledge_star_essence', 'minecraft:paper')

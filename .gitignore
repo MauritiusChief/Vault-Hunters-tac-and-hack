@@ -38,5 +38,7 @@ mods/*
 kubejs/*
 !kubejs/server_scripts/
 !kubejs/startup_scripts/
+!kubejs/client_scripts/
 !kubejs/data/
 !kubejs/assets/
+kubejs/assets/the_vault/textures/item/gear/armor/royal_golden

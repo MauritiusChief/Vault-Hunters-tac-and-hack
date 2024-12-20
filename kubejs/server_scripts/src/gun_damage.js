@@ -16,7 +16,13 @@ onEvent('entity.hurt', event => {
         extra_damage += damage*(lv2_count*0.05) // 5%加成
         extra_damage += damage*(lv3_count*0.25) // 25%加成
         extra_damage += damage*(lv4_count*1.00) // 100%加成
+        if (lv4_count>0) { // 5秒缓慢II
+            event.server.runCommandSilent(`effect give ${entity.id} minecraft:slowness ${lv4_count*5} 1`)
+        };
         extra_damage += damage*(lv5_count*5.00) // 500%加成
+        if (lv5_count>0) { // 20秒缓慢III
+            event.server.runCommandSilent(`effect give ${entity.id} minecraft:slowness ${lv5_count*20} 2`)
+        };
         // console.log(`damage:${damage} extra_damage:${extra_damage}`)
         event.server.scheduleInTicks(1, () => {
             entity.attack(event.source, extra_damage);

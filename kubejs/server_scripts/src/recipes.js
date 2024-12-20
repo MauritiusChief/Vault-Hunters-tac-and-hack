@@ -95,6 +95,9 @@ onEvent('recipes', event => {
         '#minecraft:planks',
         Fluid.of('minecraft:water', 250)
     ])
+
+    event.shapeless('the_vault:spicy_hearty_burger', ['the_vault:burger_chili', 'the_vault:cheese_burger_feast'])
+
     event.recipes.createCutting(['2x the_vault:burger_patty'], 'minecraft:cooked_beef')
     event.recipes.createCutting(['2x the_vault:burger_bun'], 'minecraft:bread')
     event.recipes.createCutting(['2x the_vault:burger_lettuce'], 'farmersdelight:cabbage')

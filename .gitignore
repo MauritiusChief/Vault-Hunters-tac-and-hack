@@ -30,6 +30,7 @@ mods/*
 !mods/ftb-ulti*.jar
 !mods/ftb-lib*.jar
 !mods/*delight*.jar
+!mods/fly*.jar
 
 !mods/i18*.jar
 !mods/vaultpatcher*.jar

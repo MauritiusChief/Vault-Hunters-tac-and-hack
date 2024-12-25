@@ -117,4 +117,6 @@ onEvent('recipes', event => {
     event.recipes.thermal.sawmill('2x the_vault:burger_pickles', 'farmersdelight:onion')
 
     event.recipes.thermal.refinery(['the_vault:burger_cheese'],Fluid.of('minecraft:milk',100))
+
+    event.recipes.thermal.centrifuge(['minecraft:diamond', 'the_vault:vault_essence'], 'the_vault:vault_diamond')
 })
